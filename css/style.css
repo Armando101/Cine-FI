@@ -1,0 +1,311 @@
+html{
+    height: 100%;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+footer {
+	background-color:black;	
+}
+
+footer a {
+	display: inline-block;
+	width: 130px;
+	height: 20px;
+	text-decoration: none;
+}
+footer ul li {
+	display: inline;
+}
+ul {
+	list-style: none;
+}
+
+nav {
+  float: right; /* Desplazamos el nav hacia la izquierda */
+}
+ 
+ 
+ul li {
+  float: right;
+}
+ 
+nav ul li a {
+  	display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+  	padding: 20px;
+  	color: #fff;
+	text-decoration: none;
+	font-family: Arial, sans-serif;
+ 
+}
+
+.disenio{
+
+	color: #FFFFFF;
+    font-family: 'Signika', sans-serif;
+}
+
+.nas {
+	color: #06D1CC;
+}
+
+.logo {
+	width: 38%;
+}
+
+.foot {
+	color: #FFFFFF;
+}
+
+.tipo {
+	width: 20%;
+}
+
+.tipo2 {
+	width: 20%;
+}
+
+.titulo {
+	color: white;
+    font-family: 'Kavivanar', cursive;
+}
+
+
+.topnav a {
+    float: left;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.imgRedonda {
+    width:300px;
+    height:300px;
+    border-radius:150px;
+}
+
+.imgRedonda2 {
+    width:270px;
+    height:280px;
+    border-radius:150px;
+}
+
+.slider {
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+.blanco {
+	color: white;
+}
+
+.fond {
+  width: 100%;
+}
+
+#lateral{
+width: 180px;  /*Este será el ancho que tendrá tu columna*/
+/*background-color: #CCCCCC;  /*Aquí pon el color del fondo que quieras para este lateral*/
+float:left; /*Aqui determinas de lado quieres quede esta "columna" */
+}
+
+#principal{
+/*margin-left:190px; /*Este margen hace que no se encime el contenido en tu menúlateral, es importante que pongas un pocos pixeles más que el ancho  de tu columna lateral*/
+width: 180px;
+float: right;
+/*background-color: #FFFFFF;*/
+/*border:#000000 1px solid; /*ponemos un dorde para que se vea bonito*/
+}
+.contenedor {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .contenedor {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contenedor {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .contenedor {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contenedor {
+    max-width: 1140px;
+  }
+}
+.fila {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: #5797F2;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+.button {
+    background-color: #000937;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.container_form {
+  max-width: 450px;
+  height: auto;
+  background-color: #160B7C;
+  margin: 5% auto;
+  padding-bottom: 1rem;
+  
+}
+
+.form__top {
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0 1rem;
+  border-top: solid .4rem #4C9ED9;
+  margin-bottom: 1rem;
+}
+
+.form__top h2 {
+  font-weight: bold;
+  color: #CAC8C8;
+  font-size: 18px;
+}
+
+h2 span {
+  color: #F39B53;
+}
+
+.form__reg {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn__form {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.input, .btn__submit, .btn__reset{
+  background-color: #EFEFEF;
+  padding: .5rem;
+  margin: .5rem 0;
+  border: none;
+  border-bottom: solid #C8C8C8 .2rem;
+  transition: all .5s;
+}
+
+.input:focus {
+  border-bottom: solid #FF0000 .2rem;
+}
+
+.btn__submit, .btn__reset {
+  width: 40%;
+  border-bottom: none;
+  background-color: #31B1E5;
+  color: white;
+}
+
+.btn__reset {
+  background-color: #EDA135;
+}
+
+.btn__submit:hover {
+background-color: #4C9ED9;
+}
+
+.btn__reset:hover{
+background-color: #FA9535;
+}
